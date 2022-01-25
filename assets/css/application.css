@@ -1,0 +1,182 @@
+@charset "UTF-8";
+html{
+    font-size: 0.5208vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body, h1, h2, h3, h4, h5, p, ul{
+    margin: 0;
+    padding: 0;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 3.6rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.pc_only{
+    display: block;
+}
+
+.sp_only{
+    display: none;
+}
+
+.pc_flex{
+    display: flex;
+}
+
+.sp_flex{
+    display: none;
+}
+
+/* 予約ボタン */
+.cta{
+    font-size: 2rem;
+    color: #A17373;
+    background: #F9B8BD;
+    border-radius: 5rem;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    width: 27.7rem;
+    padding: 1.2rem 0;
+    text-align: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.cta:hover{
+    background: #8F3356;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.cta::before{
+    position: absolute;
+    content: "";
+    width: 1.11rem;
+    height: 1.8rem;
+    top: 50%;
+    right: 2.3rem;
+    transform: translateY(-50%);
+    background: url("../img/common/arrow_cta.svg")no-repeat center center/contain;
+    transition: all .2s ease-in-out;
+}
+
+.cta:hover::before{
+    background: url("../img/common/arrow-white.svg")no-repeat center center/contain;
+    transition: all .3s ease-in-out;
+}
+
+/* インスタボタン */
+.insta{
+    font-size: 1.6rem;
+    color: white;
+    background: linear-gradient(to right, #4C64D3,#CF2E92,#F26939,#FFDD83);
+    border-radius: 5rem;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    width: 27.7rem;
+    padding: 1.4rem 0;
+    text-align: center;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.insta:hover{
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.insta::before{
+    position: absolute;
+    content: "";
+    width: 3.152rem;
+    height: 3.151rem;
+    top: 50%;
+    left: 2.67rem;
+    transform: translateY(-50%);
+    background: url("../img/common/instagram.svg")no-repeat center center/contain;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+}
+
+.insta:hover::before{
+    background: url("../img/common/instagram_black.svg")no-repeat center center/contain;
+    transition: all .3s ease-in-out;
+}
+
+.insta::after{
+    position: absolute;
+    content: "";
+    width: 1.111rem;
+    height: 1.8rem;
+    top: 50%;
+    right: 2.67rem;
+    transform: translateY(-50%);
+    background: url("../img/common/arrow-white.svg")no-repeat center center/contain;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+}
+
+.insta:hover::after{
+    background: url("../img/common/arrow_black.svg")no-repeat center center/contain;
+    transition: all .3s ease-in-out;
+}
+
+/* footer */
+footer{
+    background: #605F5C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 0 4.45rem;
+}
+
+footer > a{
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+footer p{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2.34rem;
+}
+
+footer div a img{
+    width: 3.15rem;
+    transition: all .2s ease-in-out;
+    margin: 0 1rem 2.15rem;
+}
+
+footer div a img:hover{
+    opacity: .7rem;
+    transition: all .3s ease-in-out;
+}
+
+.copy{
+    margin-bottom: 0;
+}
