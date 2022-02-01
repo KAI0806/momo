@@ -1,0 +1,202 @@
+@charset "UTF-8";
+main{
+    margin-top: 11.8rem;
+}
+
+#kv{
+    background: #FBFBF9;
+    padding-bottom: 6rem;
+}
+
+#kv .img{
+    background: url("../img/menu/menu_img.jpg")no-repeat center center/cover;
+}
+
+#kv .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 7.8rem 0 4.2rem;
+}
+
+#kv .wrap .group{
+    width: 45rem;
+}
+
+#kv .wrap .group:nth-child(4){
+    margin: 0 4.5rem;
+}
+
+#kv .wrap .group div{
+    margin-bottom: 1.2rem;
+}
+
+#kv .wrap .group div p{
+    text-align: center;
+    color: #605F5C;
+    font-size: 2rem;
+    background: #FFFCF2;
+    padding: 1.5rem 0;
+}
+
+#kv .wrap .group div p:last-child{
+    font-size: 3.6rem;
+    color: #837963;
+    background: #F9F5E9;
+    padding: 3rem 0;
+}
+
+#kv .wrap .group div p small{
+    font-size: 1.6rem;
+}
+
+#kv .wrap .group ul{
+    padding-left: 2rem;
+}
+
+#kv .wrap .group ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#kv .wrap .group ul li::before{
+    content: "・";
+    position: absolute;
+    font-size: 2rem;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#kv .wrap .group ul li p{
+    font-size: 1.8rem;
+    color: #605F5C;
+}
+
+#kv .wrap .group ul li p:last-child{
+    font-size: 2rem;
+}
+
+#kv .wrap .group ul li p small{
+    font-size: 1.4rem;
+}
+
+#kv > p{
+    color: #605F5C;
+    text-align: center;
+}
+
+#kv > p:nth-child(6){
+    margin: 1.3rem 0 5rem;
+}
+
+#kv .cta{
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px){
+    main{
+        margin-top: 7.5rem;
+    }
+
+    #kv{
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #kv h2{
+        padding-bottom: 1.5rem;
+    }
+
+    #kv .wrap{
+        flex-direction: column;
+        margin: 0 0 1.5rem;
+    }
+
+    #kv .wrap .group{
+        width: 85.33%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    #kv .wrap .group .img{
+        height: 15rem;
+        width: 100%;
+    }
+
+    #kv .wrap .img:first-child{
+        background: url("../img/menu/retouch_img.jpg")no-repeat center center/cover;
+    }
+
+    #kv .wrap .img:nth-child(3){
+        background: url("../img/menu/hullcolor_img.jpg")no-repeat center center/cover;
+        margin-top: 2rem;
+    }
+
+    #kv .wrap .img:nth-child(5){
+        background: url("../img/menu/cut_img.jpg")no-repeat center center/cover;
+    }
+
+    #kv .wrap .group div p{
+        font-size: 1.8rem;
+        padding: 1.4rem 0;
+    }
+
+    #kv .wrap .group div p:last-child{
+        font-size: 2rem;
+        padding: 2.4rem 0;
+    }
+
+    #kv .wrap .group:nth-child(2){
+        margin: auto;
+    }
+
+    #kv .wrap .group:nth-child(4){
+        margin: 0 auto 2rem;
+    }
+
+    #kv .wrap .group div p small{
+        font-size: 1.2rem;
+    }
+
+    #kv .wrap .group ul{
+        padding-left: 1rem;
+        margin-bottom: .8rem;
+    }
+
+    #kv .wrap .group ul li{
+        margin-bottom: .5rem;
+    }
+
+    #kv .wrap .group ul li p{
+        font-size: 1.6rem;
+    }
+
+    #kv .wrap .group ul li p small{
+        font-size: 1rem;
+    }
+
+    #kv .wrap .group ul li::before{
+        font-size: 1.6rem;
+        left: -1.5rem;
+    }
+
+    #kv .wrap .group:last-child ul li:nth-child(2) p:first-child{
+        font-size: 1.4rem;       
+    }
+
+    #kv .wrap .group > p{
+        font-size: 1.4rem;
+        color: #605F5C;
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+
+    #kv .wrap .group:nth-child(4) > p:nth-child(3), #kv .wrap .group:nth-child(4) > p:nth-child(4){
+        text-align: left;
+    }
+}

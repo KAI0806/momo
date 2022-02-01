@@ -9,22 +9,65 @@
     <link rel="stylesheet" href="assets/css/application.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body ontouchstart="">
+    <header class="sp_flex">
+        <a class="logo" href="/">Color<br/><small>hair color salon</small></a>
+
+        <nav id="nav" class="sp_only">
+            <div class="nav_wrap">
+                <ul>
+                    <li><a href="#">CONCEPT</a></li>
+                    <li><a href="../color_style/">COLOR STYLE</a></li>
+                    <li><a href="../menu/">MENU</a></li>
+                    <li><a href="../information/">INFORMATION</a></li>
+                </ul>
+
+                <p class="tel">
+                    TEL：<a href="tel:045-534-7792">045-534-7792</a>
+                    <br/>(予約優先制)
+                </p>
+
+                <a class="cta" href="https://beauty.hotpepper.jp/slnH000481293/" target="_blank" rel="noopener noreferrer">ご予約はこちらから</a>
+
+                <h3>Color</h3>
+                <p class="address">
+                    〒223-0062 
+                    <br/>神奈川県横浜市北区日吉本町 1-3-21
+                    <br/>小島ビル2F
+                </p>
+
+                <div>
+                    <a href="" target="_blank" rel="noopener noreferrer"><img src="../assets/img/common/facebook_grey.svg" alt="facebook"></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><img src="../assets/img/common/instagram_grey.svg" alt="instagram"></a>
+                </div>
+            </div>
+        </nav>
+        <div id="hamburger" class="sp_only">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </div>
+    </header>
+
     <main>
         <section id="mv">
             <div>
                 <h1>Color<br/><small>ヘアカラー専門店</small></h1>
             </div>
+
+            <a class="cta sp_only" href="">予約はこちらから</a>
+
+            <a class="scroll sp_flex" href="#concept"><img src="assets/img/top/scroll.svg" alt="scroll"><p>scroll</p></a>
         </section>
 
-        <div class="top_menu">
-            <a class="logo" href="">Color<br/><small>hair color salon</small></a>
+        <div class="top_menu pc_flex">
+            <a class="logo" href="/">Color<br/><small>hair color salon</small></a>
             <nav>
                 <ul>
-                    <li><a href="">CONCEPT</a></li>
-                    <li><a href="">COLOR STYLE</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">INFOMATION</a></li>
+                    <li><a href="concept/">CONCEPT</a></li>
+                    <li><a href="color_style/">COLOR STYLE</a></li>
+                    <li><a href="menu/">MENU</a></li>
+                    <li><a href="information/">INFOMATION</a></li>
                 </ul>
             </nav>
 
@@ -36,73 +79,88 @@
             <h3>あなたの思い通りのcolorに</h3>
 
             <p>カラーは隙間時間で、カラーやトリートメントが出来る通いやすいサロンです。</p>
-            <a class="more" href="">MORE</a>
+            <a class="more" href="concept/">MORE</a>
         </section>
 
         <section id="color">
             <h2>COLOR STYLE</h2>
 
             <div>
-                <a href=""><span class="mask"><img src="assets/img/top/color001.jpg" alt=""></span></a>
-                <a href=""><span class="mask"><img src="assets/img/top/color002.jpg" alt=""></span></a>
-                <a href=""><span class="mask"><img src="assets/img/top/color003.jpg" alt=""></span></a>
+                <a href="color_style/#brown"><span class="mask">
+                    <picture>
+                        <source srcset="assets/img/top/color001.jpg" media="(min-width: 767px)" />
+                        <img src="assets/img/color/brown_kv_sp.jpg" alt="ブラウン">
+                    </picture>
+                </span></a>
+                <a href="color_style/#dark"><span class="mask">
+                    <picture>
+                        <source srcset="assets/img/top/color002.jpg" media="(min-width: 767px)">
+                        <img src="assets/img/color/dark_kv_sp.jpg" alt="ダークブラウン">
+                    </picture>
+                </span></a>
+                <a href="color_style/#black"><span class="mask">
+                    <picture>
+                        <source srcset="assets/img/top/color003.jpg" media="(min-width: 767px)">
+                    </picture>
+                    <img src="assets/img/color/black_kv_img.jpg" alt="ブラック">
+                </span></a>
             </div>
 
-            <a class="more" href="">MORE</a>
+            <a class="more" href="color_style/">MORE</a>
         </section>
 
         <section id="menu">
             <h2>MENU</h2>
 
             <div>
-                <a href="">
+                <a href="menu/#retouch">
                     <p>リタッチ(根元染め)</p>
                     <p>￥2,100<small> (税込)</small></p>
                 </a>
-                <a href="">
+                <a href="menu/#hullcolor">
                     <p>フルカラー(全体染め)</p>
                     <p>￥2,500<small> (税込)</small></p>
                 </a>
-                <a href="">
+                <a href="menu/#cut">
                     <p>カット</p>
-                    <p>￥2,000<small> (税込)</small></p>
+                    <p>￥2,100<small> (税込)</small></p>
                 </a>
             </div>
 
-            <a class="more" href="">MORE</a>
+            <a class="more" href="menu/">MORE</a>
         </section>
 
         <div class="wrap">
             <section id="info">
                 <h2>INFOMATION</h2>
-                <img src="assets/img/top/info.jpg" alt="">
+                <img src="assets/img/top/info.jpg" alt="インフォメーション">
 
                 <div class="content">
                     <h3>Color 日吉店</h3>
 
                     <p>
                         〒223-0062
-                        <br/>神奈川県横浜市北区日吉本町 1-3-21 小島ビル2F
+                        <br/>神奈川県横浜市北区日吉本町 1-3-21 <br class="sp_only"/>小島ビル2F
                     </p>
 
                     <p>
-                        TEL 045-534-7792<small>予約優先制</small>
+                        TEL 045-534-7792<small>（予約優先制)</small>
                     </p>
 
                     <div>
                         <p>
-                            定休日
-                            <br/>水曜日、不定休有
+                            定休日：
+                            <br class="pc_only"/>水曜日、不定休
                         </p>
 
                         <p>
-                            営業時間
-                            <br/>9:00〜18:00<small>（カラー最終受付17：00)</small>
+                            営業時間：
+                            <br class="pc_only"/>9:00〜18:00<br class="sp_only"/><small>（カラー最終受付17：00)</small>
                         </p>
                     </div>
                 </div>
 
-                <a class="more" href="">MORE</a>
+                <a class="more" href="information/">MORE</a>
                 <a class="cta" href="">予約する</a>
             </section>
 
@@ -118,16 +176,16 @@
     </main>
 
     <footer>
-        <a href="">Color</a>
+        <a href="#">Color</a>
     
         <p>
-            〒223-0062　神奈川県横浜市北区日吉本町 1-3-21 小島ビル2F
+            〒223-0062　<br class="sp_only"/>神奈川県横浜市北区日吉本町 1-3-21 小島ビル2F
             <br/>TEL: 045-534-7792
         </p>
     
         <div>
-            <a href=""><img src="assets/img/common/facebook.svg" alt=""></a>
-            <a href=""><img src="assets/img/common/instagram.svg" alt=""></a>
+            <a href=""><img src="assets/img/common/facebook.svg" alt="facebook"></a>
+            <a href=""><img src="assets/img/common/instagram.svg" alt="instagram"></a>
         </div>
     
         <p class="copy">&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> nono Co., Ltd</p>

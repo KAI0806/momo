@@ -1,0 +1,195 @@
+@charset "UTF-8";
+main{
+    margin-top: 11.8rem;
+}
+
+#brown{
+    background: #FBFBF9;
+    padding: 0 0 8rem;
+}
+
+#brown .img{
+    width: 100%;
+    height: 41.6rem;
+    background: url("../img/color/blown_kv.jpg")no-repeat center center/cover;
+    position: relative;
+}
+
+#brown .img::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: translateY(50%);
+    right: 11.44rem;
+    width: 30.773rem;
+    height: 30.773rem;
+    background: url("../img/top/brown.svg")no-repeat center center/contain;
+}
+
+#brown .wrap, #dark .wrap, #black .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 99rem;
+    margin: 11.5rem auto 10rem;
+}
+
+#brown .wrap img, #dark .wrap img, #black .wrap img{
+    width: 45rem;
+}
+
+#brown .wrap img:first-child, #brown .wrap img:nth-child(2), #dark .wrap img:first-child, #dark .wrap img:nth-child(2), #black .wrap img:first-child, #black .wrap img:nth-child(2){
+    margin-bottom: 9rem;
+}
+
+#brown .btn, #dark .btn, #black .btn{
+    width: 99rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* dark */
+#dark{
+    padding: 8rem 0 ;
+}
+
+#dark .img{
+    width: 100%;
+    height: 41.6rem;
+    background: url("../img/color/dark_kv.jpg")no-repeat center center/cover;
+    position: relative;
+}
+
+#dark .img::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: translateY(50%);
+    right: 11.44rem;
+    width: 30.773rem;
+    height: 30.773rem;
+    background: url("../img/top/dark_brown.svg")no-repeat center center/contain;
+}
+
+/* black */
+#black{
+    padding: 8rem 0 ;
+    background: #FBFBF9;
+}
+
+#black .img{
+    width: 100%;
+    height: 41.6rem;
+    background: url("../img/color/black_kv.jpg")no-repeat center center/cover;
+    position: relative;
+}
+
+#black .img::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: translateY(50%);
+    right: 11.44rem;
+    width: 30.773rem;
+    height: 30.773rem;
+    background: url("../img/top/black.svg")no-repeat center center/contain;
+}
+
+@media screen and (max-width: 767px){
+    main{
+        margin-top: 7.5rem;
+    }
+
+    #kv{
+        padding-top: 2rem;
+    }
+
+    #kv h2{
+        padding-bottom: 1.5rem;
+    }
+
+    #brown{
+        padding: 0 0 2.1rem;
+    }
+
+    #brown .img{
+        height: 15rem;
+        background: url("../img/color/brown_kv_sp.jpg")no-repeat center center/cover;
+    }
+
+    #brown .img::before{
+        width: 10rem;
+        height: 10rem;
+        bottom: unset;
+        right: unset;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2.7rem;
+    }
+
+    #brown .wrap, #dark .wrap, #black .wrap{
+        width: 85.33%;
+        min-width: 320px;
+        margin: 2.5rem auto 1.75rem;
+    }
+
+    #brown .wrap img:first-child, #brown .wrap img:nth-child(2), #dark .wrap img:first-child, #dark .wrap img:nth-child(2), #black .wrap img:first-child, #black .wrap img:nth-child(2){
+        margin-bottom: 1.55rem;
+    }
+
+    #brown .wrap img, #dark .wrap img, #black .wrap img{
+        width: 15rem;
+    }
+
+    #brown .btn, #dark .btn, #black .btn{
+        width: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #brown .btn .insta, #dark .btn .insta, #black .btn .insta{
+        margin-bottom: 1.8rem;
+    }
+
+    #dark{
+        padding: 0 0 2.2rem;
+    }
+
+    #dark .img{
+        height: 15rem;
+        background: url("../img/color/dark_kv_sp.jpg")no-repeat center center/cover;
+    }
+
+    #dark .img::before{
+        width: 10rem;
+        height: 10rem;
+        bottom: unset;
+        right: 2.7rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #black{
+        padding: 0 0 2rem;
+    }
+
+    #black .img{
+        height: 15rem;
+        background: url("../img/color/black_kv_img.jpg")no-repeat center center/cover;
+    }
+
+    #black .img::before{
+        width: 10rem;
+        height: 10rem;
+        bottom: unset;
+        right: unset;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2.7rem;
+    }
+}

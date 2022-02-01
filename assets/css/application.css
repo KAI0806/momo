@@ -51,6 +51,57 @@ p{
     display: none;
 }
 
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 7rem;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    position: fixed;
+    width: calc(100% - 14rem);
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #D8BA87;
+    text-align: center;
+    line-height: .8;
+    margin-left: 7rem;
+    transition: all .2s ease-in-out;
+}
+
+header .logo:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+header .logo small{
+    font-size: 1rem;
+    color: #D8B374;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 102.3rem;
+}
+
+header nav ul li a{
+    font-size: 2rem;
+    color: #998675;
+    transition: all .2s ease-in-out;
+}
+
+header nav ul li a:hover{
+    opacity: .3;
+    transition: all .3s ease-in-out;
+}
+
 /* 予約ボタン */
 .cta{
     font-size: 2rem;
@@ -143,6 +194,24 @@ p{
     transition: all .3s ease-in-out;
 }
 
+
+#kv{
+    background: #FBFBF9;
+    padding-top: 8.2rem;
+}
+
+#kv h2{
+    text-align: center;
+    padding-bottom: 8rem;
+    color: #998675;
+}
+
+
+#kv .img{
+    height: 41.6rem;
+    width: 100%;
+}
+
 /* footer */
 footer{
     background: #605F5C;
@@ -179,4 +248,251 @@ footer div a img:hover{
 
 .copy{
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 2.667vw;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+
+    .pc_only{
+        display: none;
+    }
+    
+    .sp_only{
+        display: block;
+    }
+
+    .pc_flex{
+        display: none !important;
+    }
+
+    .sp_flex{
+        display: flex;
+    }
+
+    .pc_inline{
+        display: none;
+    }
+
+    .sp_inline{
+        display: inline;
+    }
+
+    header{
+        padding: 1rem 1.2rem;
+        width: calc(100% - 2.4rem);
+    }
+
+    header .logo{
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    header .logo small{
+        font-size: 1rem;
+    }
+
+    #hamburger {
+        width: 6.6rem;
+        height: 5.5rem;
+        transition: all 1s ease-out;
+        position: relative;
+        z-index: 1;
+    }
+
+    .inner_line {
+        display: block;
+        position: absolute;
+        right: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 50%);
+        bottom: 50%;
+        width: 50%;
+        height: 3px;
+        background: #707070;
+        transition: all 1s ease-out;
+    }
+
+    #line1 {
+        top: 30%;
+    }
+
+    #line2 {
+        top: 47%;
+    }
+
+    #line3 {
+        bottom: 30%;
+    }
+
+    .in{
+        transform: translateX(-100%);
+        opacity: 1 !important;
+    }
+
+    .line_1,.line_2,.line_3{
+        background: #707070;
+        z-index: 100;
+    }
+
+    .line_1 {
+        transform: translate(-1.5rem, .95rem) rotate(-45deg);
+        top: 0;
+    }
+
+    .line_2 {
+        opacity: 0;
+    }
+    
+    .line_3 {
+        transform: translate(-1.5rem, -.95rem) rotate(45deg);
+        bottom: 0;
+    }
+
+    #nav{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        right: -100%;
+        top:  7.5rem;
+        background: white;
+        transition: all .7s ease-in-out;
+        z-index: 1;
+        opacity: 0;
+        overflow-y: scroll;
+        line-height: 100%;
+        box-shadow: inset 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    }
+
+    header nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav_wrap{
+        padding: 3.2rem 0 3.1rem;
+        width: 85.33%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav_wrap ul{
+        width: calc(25.7rem - 11rem);
+        height: calc(23rem - 8.8rem);
+        border: .2rem solid #DCD0B9;
+        border-radius: 4rem;
+        padding: 4.4rem 5.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav_wrap ul li{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-bottom: .3rem;
+        border-bottom: .1rem solid #DCD0B9;
+    }
+
+    .nav_wrap ul li::before{
+        position: absolute;
+        content: "";
+        width: .8rem;
+        height: 1.2rem;
+        top: 50%;
+        left: -1.5rem;
+        transform: translateY(-50%);
+        background: url("../img/common/hamb_arrow.svg")no-repeat center center/contain;
+    }
+
+    .nav_wrap .tel{
+        text-align: center;
+        line-height: 1;
+        color: #605F5C;
+        font-size: 1.4rem;
+        margin-bottom: 2.86rem;
+    }
+
+    .nav_wrap p{
+        line-height: 1;
+    }
+
+    .nav_wrap .tel a{
+        color: #605F5C;
+        font-size: 2.8rem;
+    }
+
+    header nav ul li a{
+        font-size: 1.8rem;
+    }
+
+    .nav_wrap h3{
+        width: 85%;
+        margin-top: 1.5rem;
+    }
+
+    .nav_wrap .address{
+        width: 85%;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav_wrap div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 85%;
+    }
+
+    /* main */
+    #kv .img{
+        height: 15rem;
+    }
+
+    .cta{
+        font-size: 1.6rem;
+        width: 27.7rem;
+        padding: 1.4rem 0;
+        text-align: center;
+    }
+
+    /* footer */
+    footer{
+        padding: 1.9rem 0 1.33rem;
+    }
+
+    footer > a{
+        margin-bottom: 0;
+    }
+
+    footer p{
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 1.27rem;
+    }
+
+    footer p:nth-child(2){
+        width: 85.33%;
+        min-width: 320px;
+    }
+
+    footer div a img{
+        margin: 0 1rem 1.67rem;
+    }
 }

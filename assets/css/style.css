@@ -37,6 +37,8 @@
     align-items: center;
     padding: 3.2rem 7rem;
     box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    position: relative;
+    z-index: 10;
 }
 
 .top_menu .logo{
@@ -228,6 +230,12 @@
 #menu div a{
     width: 45rem;
     text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+#menu div a:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
 }
 
 #menu div a p:first-child{
@@ -313,4 +321,217 @@ main .wrap h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 767px){
+    main{
+        margin-top: 7.5rem;
+    }
+
+    #mv{
+        height: calc(100vh - 7.5rem);
+        background: url("../img/top/mv_sp.jpg")no-repeat center center/cover;
+    }
+
+    #mv div{
+        right: unset;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #mv div h1{
+        font-size: 4.5rem;
+        padding: 5rem 6.54rem;
+        width: max-content;
+    }
+
+    #mv div h1 small{
+        font-size: 1.6rem;
+    }
+
+    #mv .cta{
+        display: block;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 27rem;
+        transform: translate(-50%, -50%);
+    }
+
+    #mv .scroll{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #mv .scroll img{
+        width: 1.65rem;
+    }
+
+    #mv .scroll p{
+        color: black;
+        font-size: 1.2rem;
+        position: relative;
+    }
+
+    #mv .scroll p::before{
+        content: "";
+        position: absolute;
+        bottom: -4.5rem;
+        left: 50%;
+        transform: translateX(-50%) rotateZ(90deg);
+        border-bottom: dashed .1rem black;
+        width: 9rem;
+        height: .1rem;
+    }
+
+    #concept{
+        padding: 2.4rem 0 2.2rem;
+    }
+
+    #concept h2{
+        margin-bottom: 1.2rem;
+    }
+
+    #concept h3{
+        margin-bottom: 1.3rem;
+    }
+
+    #concept p{
+        width: 85.33%;
+        min-width: 320px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2.3rem;
+    }
+
+    .more{
+        font-size: 1.6rem;
+        padding: 1.2rem 0;
+    }
+
+    #color{
+        padding: 1.5rem 0;
+    }
+
+    #color h2{
+        margin-bottom: 1.5rem;
+    }
+
+    #color div{
+        flex-direction: column;
+        margin-bottom: 2.2rem;
+    }
+
+    #color div .mask img{
+        height: 15rem;
+        width: 100%;
+    }
+
+    #color div a::before{
+        width: 10.364rem;
+        height: 10.364rem;
+        bottom: unset;
+        top: 50%;
+        right: unset;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    #color div a:first-child::before, #color div a:last-child::before{
+        left: 2.8rem;
+    }
+
+    #color div a:nth-child(2){
+        margin: 1rem 0;
+    }
+
+    #color div a:nth-child(2)::before{
+        right: 2.8rem;
+    }
+
+    #menu{
+        padding: 1.5rem 0 1.7rem;
+    }
+
+    #menu h2{
+        margin-bottom: 1.5rem;
+    }
+
+    #menu div{
+        flex-direction: column;
+        width: 85.33%;
+        min-width: 320px;
+        margin-bottom: 2.3rem;
+    }
+
+    #menu div a{
+        width: 100%;
+    }
+
+    #menu div a p:first-child{
+        font-size: 1.6rem;
+        padding: 1.7rem 0;
+    }
+
+    #menu div a p:last-child{
+        font-size: 2rem;
+        padding: 2.3rem 0;
+    }
+
+    #menu div a p:last-child small{
+        font-size: 1.2rem;
+    }
+
+    main .wrap{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 1rem 0 0;
+    }
+
+    #insta{
+        width: 100%;
+        width: 85.33%;
+        min-width: 320px;
+        margin: 0 auto 2.3rem;
+    }
+
+    main .wrap h2{
+        margin-bottom: 1.4rem;
+    }
+
+    #info{
+        width: 100%;
+        background: #FBFBF9;
+        padding: 1.3rem 0 2.8rem;
+    }
+
+    #info .content{
+        width: 85.33%;
+        min-width: 320px;
+        margin-bottom: 2.3rem;
+    }
+
+    #info .content h3{
+        font-size: 2rem;
+        margin-bottom: 1.1rem;
+    }
+
+    #info .content p{
+        font-size: 1.6rem;
+    }
+
+    #info .content > p+p{
+        margin-top: 1.3rem;
+    }
+
+    #info .content div{
+        flex-direction: column;
+    }
 }
