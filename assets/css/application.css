@@ -248,7 +248,7 @@ footer div a img{
 }
 
 footer div a img:hover{
-    opacity: .5rem;
+    opacity: .5;
     transition: all .3s ease-in-out;
 }
 
