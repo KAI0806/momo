@@ -141,7 +141,7 @@ main{
     }
 
     #brown .wrap img, #dark .wrap img, #black .wrap img{
-        width: 15rem;
+        width: 14rem;
     }
 
     #brown .btn, #dark .btn, #black .btn{
