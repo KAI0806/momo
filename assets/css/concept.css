@@ -126,6 +126,13 @@ main{
     margin: auto;
 }
 
+@media screen and (max-width: 1024px){
+    #flow .wrap .step{
+        width: 9rem;
+        height: 9rem;
+    }
+}
+
 @media screen and (max-width: 767px){
     main{
         margin-top: 7.5rem;
