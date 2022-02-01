@@ -2,7 +2,7 @@
 function FixedAnime() {
     var headerH = $('#header').outerHeight(true);
     var scroll = $(window).scrollTop();
-    if (scroll > headerH + 750){//headerの高さ以上になったら
+    if (scroll > headerH + 550){//headerの高さ以上になったら
         $('#header').addClass('fixed');//fixedというクラス名を付与
       }else{//それ以外は
         $('#header').removeClass('fixed');//fixedというクラス名を除去
