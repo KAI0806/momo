@@ -39,6 +39,7 @@
     box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
     position: relative;
     z-index: 10;
+    background: white;
 }
 
 .top_menu .logo{
@@ -76,6 +77,14 @@
 .top_menu nav ul li a:hover{
     opacity: .3;
     transition: all .3s ease-in-out;
+}
+
+#header.fixed{
+	position: fixed;/*fixedを設定して固定*/
+    z-index: 1000;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
+    width: calc(100% - 14rem);
 }
 
 /* concept */
