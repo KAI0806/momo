@@ -268,7 +268,7 @@ footer div a img:hover{
     }
 
     .pc_only{
-        display: none;
+        display: none !important;
     }
     
     .sp_only{

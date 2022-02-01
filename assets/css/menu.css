@@ -84,6 +84,10 @@ main{
     font-size: 1.4rem;
 }
 
+#kv .wrap .group .cta{
+    margin-top: 2rem;
+}
+
 #kv > p{
     color: #605F5C;
     text-align: center;
@@ -94,7 +98,6 @@ main{
 }
 
 #kv .cta{
-    display: block;
     margin: auto;
 }
 
