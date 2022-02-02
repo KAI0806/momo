@@ -361,6 +361,7 @@ main .wrap h2{
     #mv{
         height: calc(100vh - 7.5rem);
         background: url("../img/top/mv_sp.jpg")no-repeat center center/cover;
+        overflow: hidden;
     }
 
     #mv div{

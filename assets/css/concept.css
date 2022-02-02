@@ -25,15 +25,12 @@ main{
     margin: 0 7.5rem;
 }
 
-#kv .wrap div:nth-child(2) h4{
-    color: #998675;
-}
-
 #kv .wrap div h4{
     font-size: 2rem;
     margin-bottom: 2.23rem;
     font-weight: normal;
     position: relative;
+    color: #998675;
 }
 
 #kv .wrap div h4::before{
