@@ -299,10 +299,22 @@ main .wrap h2{
 
 #info .content h3{
     margin-bottom: 2.8rem;
+    color: #707070;
 }
 
 #info .content p{
     font-size: 1.8rem;
+    color: #707070;
+}
+
+#info .content p a{
+    color: #707070;
+    transition: all .2s ease-in-out;
+}
+
+#info .content p a:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
 }
 
 #info .content p small{
