@@ -4,8 +4,7 @@ main{
 }
 
 #info{
-    background: #FBFBF9;
-    padding: 8rem 0 5.4rem;
+    padding: 6.1rem 0 8.9rem;
 }
 
 #info h2{
@@ -104,12 +103,13 @@ main{
 
 /* staff */
 #staff{
-    padding: 3.5rem 0 10rem;
+    padding: 3.5rem 0 3rem;
+    background: #FBFBF9;
 }
 
 #staff h2{
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     color: #998675;
 }
 
@@ -117,26 +117,28 @@ main{
     width: 75%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    background: white;
+    margin-bottom: 4.5rem;
 }
 
-#staff .wrap > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 42.75rem;
+
+#staff .wrap img{
+    width: 27.2rem;
+    margin-right: 2rem;
 }
 
-#staff .wrap > div img{
+#staff .wrap img:last-child{
+    margin-right: 0;
+}
+
+#staff .wrap .txt{
+    position: relative;
     width: 27.2rem;
 }
 
-#staff .wrap > div .txt{
-    position: relative;
-}
-
-#staff .wrap > div .txt::before{
+#staff .wrap .txt::before{
     position: absolute;
     content: "";
     top: 50%;
@@ -147,12 +149,12 @@ main{
     background: #D9D9D9;
 }
 
-#staff .wrap > div .txt p{
+#staff .wrap .txt p{
     text-align: center;
     font-size: 1.8rem;
 }
 
-#staff .wrap > div .txt p+p{
+#staff .wrap .txt p+p{
     margin-top: 3.3rem;
 }
 
@@ -239,7 +241,7 @@ main{
 
     /* staff */
     #staff{
-        padding: 1.5rem 0 2.6rem;
+        padding: 1.5rem 0 1.9rem;
     }
 
     #staff h2{
@@ -247,32 +249,39 @@ main{
     }
 
     #staff .wrap{
-        flex-direction: column;
         width: 85.33%;
         min-width: 320px;
+        flex-wrap: wrap;
+        margin-bottom: 2.3rem;
     }
 
-    #staff .wrap > div{
+    #staff .wrap:nth-child(3){
+        padding: 2.1rem 0;
+    }
+
+    #staff .wrap .txt{
+        width: 50%;
+    }
+
+    #staff .wrap img{
+        width: 50%;
+        margin: 0;
+    }
+
+    #staff .wrap:last-child .txt{
         width: 100%;
+        padding: 2.8rem 0;
     }
 
-    #staff .wrap > div:nth-child(2){
-        margin: 2.6rem 0;
+    #staff .wrap:last-child img{
+        margin-bottom: 2.5rem;
     }
 
-    #staff .wrap > div img{
-        width: 50%;
-    }
-
-    #staff .wrap > div .txt{
-        width: 50%;
-    }
-
-    #staff .wrap > div .txt p{
+    #staff .wrap .txt p{
         font-size: 1.6rem;
     }
 
-    #staff .wrap > div .txt p+p{
+    #staff .wrap .txt p+p{
         margin-top: 2.4rem;
     }
 }
