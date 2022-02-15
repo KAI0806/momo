@@ -1,0 +1,26 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header set Content-Security-Policy "script-src 'nonce-ran123dom' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'none'"
+
+
+<FilesMatch "\.html$">
+Header set Content-Type 'text/html; charset=utf-8'
+</FilesMatch>
+<FilesMatch ".(js)$">
+Header set Cache-Control "max-age=86400, public"
+</FilesMatch>
+<FilesMatch ".(jpg|png|svg|mp4|webp|css)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
