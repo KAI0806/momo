@@ -123,6 +123,9 @@ main{
     margin-bottom: 4.5rem;
 }
 
+#staff .wrap:last-child .txt::before{
+    top: 38%;
+}
 
 #staff .wrap img{
     width: 27.2rem;
