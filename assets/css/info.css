@@ -123,6 +123,10 @@ main{
     margin-bottom: 4.5rem;
 }
 
+#staff .wrap:last-child{
+    margin-bottom: 0;
+}
+
 #staff .wrap:last-child .txt::before{
     top: 38%;
 }
@@ -278,6 +282,10 @@ main{
 
     #staff .wrap:last-child img{
         margin-bottom: 2.5rem;
+    }
+
+    #staff .wrap:last-child img:nth-child(4), #staff .wrap:last-child img:last-child{
+        margin-bottom: 1.4rem;
     }
 
     #staff .wrap .txt p{
